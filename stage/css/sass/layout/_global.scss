@@ -14,10 +14,18 @@ nav {
   width: 100%;
   padding: 20px 0;
   background-color: #fff;
+  @media screen and(max-width: 600px) {
+    top: -50px;
+  }
   .nav-wrapper {
     display: flex;
     justify-content: space-between;
     margin: 0 50px;
+    @media screen and(max-width: 600px) {
+      // flex-direction: column;
+      display: block;
+      text-align: center;
+    }
   }
 
   .logo {
@@ -28,15 +36,21 @@ nav {
       font-weight: 600;
       font-size: 1.2rem;
     }
+    @media screen and(max-width: 600px) {
+      margin-bottom: 20px;
+    }
   }
 }
 .nav-list {
   list-style: none;
   margin: 0;
+
   li {
     display: inline-block;
-    margin-left: 30px;
     text-transform: capitalize;
+    &:not(:first-of-type) {
+      margin-left: 30px;
+    }
 
     a {
       color: #666;
@@ -81,12 +95,22 @@ nav {
   display: flex;
   justify-content: space-between;
   margin-top: 50px;
+  @media screen and(max-width: 600px) {
+    flex-direction: column;
+    margin-top: 30px;
+  }
 }
 .work-name {
   width: 30%;
   h2 {
     font-family: "Montserrat", sans-serif;
     // margin-bottom: 20px;
+  }
+  @media screen and(max-width: 600px) {
+    width: 100%;
+    h2 {
+      // margin-bottom: 20px;
+    }
   }
 }
 .work-desc {
@@ -115,21 +139,35 @@ nav {
   p.desc {
     margin: 0;
   }
+  @media screen and (max-width: 600px) {
+    b {
+      display: block;
+    }
+  }
 }
 
 .services {
   padding-top: 150px;
   padding-bottom: 100px;
   border-top: 1px solid #e1e1e1;
+  @media screen and(max-width: 600px) {
+    padding: 100px 0 80px;
+  }
 
   h2 {
     font-weight: 500;
     margin-bottom: 30px;
     // font-family: "Noto Sans JP", sans-serif;
     font-family: "Poppins", sans-serif;
+    @media screen and(max-width: 600px) {
+      text-align: center;
+    }
   }
   .services-list {
     display: flex;
+    @media screen and(max-width: 600px) {
+      flex-direction: column;
+    }
   }
   .services-right,
   .services-left {
@@ -166,15 +204,21 @@ nav {
   background-color: #14213d;
   text-align: center;
   font-family: "Poppins", sans-serif;
-  border-bottom: 1px solid rgba(255,255,255,0.1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   h3 {
     color: #fff;
     margin-bottom: 1.5rem;
+    @media screen and(max-width: 600px) {
+      font-size: 1.4rem;
+    }
   }
   p {
     color: #ccc;
     font-family: "Montserrat", sans-serif;
     margin-bottom: 2.5rem;
+    @media screen and(max-width: 600px) {
+      font-size: 0.9rem;
+    }
   }
   a {
     padding: 15px;
@@ -189,28 +233,32 @@ nav {
     &:hover {
       background-color: #a81e1e;
     }
+    @media screen and(max-width: 600px) {
+      font-weight: 500;
+    }
   }
 }
 
-footer{
+footer {
   background-color: #14213d;
   color: #999;
   padding: 30px;
-  p{
+  p {
     margin: 0;
-    
+  }
+  @media screen and(max-width: 600px) {
+    padding: 20px 0;
   }
 }
-.footer-wrapper{
+.footer-wrapper {
   display: flex;
   justify-content: space-between;
 
-  .social{
-    a{
+  .social {
+    a {
       text-decoration: none;
       color: #999;
       margin-left: 20px;
     }
-
   }
 }
