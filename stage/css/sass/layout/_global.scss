@@ -10,11 +10,15 @@
     padding: 0;
   }
 }
+body{
+  overflow-x: hidden;
+}
 nav {
   position: sticky;
   top: 0;
   // margin-top: 20px;
   width: 100%;
+  z-index: 1;
   padding: 20px 0;
   background-color: #fff;
   @media screen and(max-width: 600px) {
@@ -34,6 +38,7 @@ nav {
 
   .logo {
     a {
+      letter-spacing: 3px;
       color: #333;
       text-decoration: none;
       font-family: "Montserrat", sans-serif;
@@ -150,7 +155,7 @@ nav {
   }
   p.desc {
     margin: 0;
-    line-height: 1.6;
+    line-height: 1.8;
   }
   @media screen and (max-width: 600px) {
     b {
@@ -221,6 +226,7 @@ nav {
   font-family: "Poppins", sans-serif;
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   @media screen and(max-width: 600px) {
+    padding: 100px 0;
     padding-right: 15px;
     padding-left: 15px;
   }
@@ -282,4 +288,64 @@ footer {
       margin-left: 20px;
     }
   }
+}
+
+// fade animations
+.fade-from-left,
+.fade-from-right {
+  transition: 0.5s all ease-in-out;
+  opacity: 0;
+}
+
+.fade-from-left {
+  transform: translateX(-100px);
+}
+.fade-start-left {
+  transform: translateX(0px);
+}
+.fade-from-right {
+  transform: translateX(100px);
+}
+.fade-start-right {
+  transform: translateX(0);
+}
+.fade-start-left,
+.fade-start-right {
+  opacity: 1;
+}
+
+.fade-up{
+  transition: 0.5s all ease-in-out;
+  opacity: 0;
+  transform: translateY(100px);
+}
+.fade-up-start{
+  opacity: 1;
+  transform: translateY(0);
+}
+.fade-up-now{
+  transition: 0.5s all ease-in-out;
+  opacity: 0;
+  transform: translateY(100px);
+}
+.fade-up-now-start{
+  opacity: 1;
+  transform: translateY(0);
+}
+.fade-down{
+  transition: 0.5s all ease-in-out;
+  opacity: 0;
+  transform: translateY(-100px);
+}
+.fade-down-start{
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.fade-in{
+  transition: 0.5s all ease-in-out;
+  opacity: 0;
+}
+.fade-in-start{
+  opacity: 1;
 }

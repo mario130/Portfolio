@@ -8,7 +8,7 @@ html(lang="en")
     include pug/layout/styles
   body
     nav
-      .nav-wrapper
+      .nav-wrapper.fade-down
         .logo
           a(href="homepage.html") Mario Yonan
         ul.nav-list
@@ -21,19 +21,19 @@ html(lang="en")
 
     //- intro
     .hero
-      .hero-wrapper.container
+      .hero-wrapper.container.fade-in
         h2 Hello! I'm Mario Yonan – a Frontend Web Developer from Asyut, Egypt.
 
     //- word
     .works.container
 
-      .awork-parent
+      .awork-parent.fade-up-now
         img(src="images/website-1.png", alt="")
 
         .awork
-          .work-name
+          .work-name.fade-from-left
             h2 Tween 11
-          .work-desc
+          .work-desc.fade-from-right
             p.desc Tween 11 is my latest website built without using CSS libraries like Bootstrap, only Media Query from scratch. It was much easier to get the specific design I wanted althought it took longer time.
             p 
               b Technologies used: 
@@ -42,13 +42,13 @@ html(lang="en")
               a.project-link(href="https://github.com/mario130/practice-a") Repo ›
               a.project-link(href="https://mario130.github.io/practice-a/dist/homepage.html") Live version ›
               
-      .awork-parent
+      .awork-parent.fade-up
         img(src="images/website-2.png", alt="")
 
         .awork
-          .work-name
+          .work-name.fade-from-left
             h2 Design 23
-          .work-desc
+          .work-desc.fade-from-right
             p.desc One of the websites which I created once I finished a lot of technologies but I focused the most on using Javascript on this one, also without using Bootstrap.
             p 
               b Technologies used: 
@@ -57,13 +57,13 @@ html(lang="en")
               a.project-link(href="https://github.com/mario130/30-6temp") Repo ›
               a.project-link(href="https://mario130.github.io/30-6temp/dist/homepage.html") Live version ›
               
-      .awork-parent
+      .awork-parent.fade-up
         img(src="images/website-3.png", alt="")
 
         .awork
-          .work-name
+          .work-name.fade-from-left
             h2 newzy.
-          .work-desc
+          .work-desc.fade-from-right
             p.desc A news website template I created when I was still a beginner in Media Query, But since then I've came a long way.
             p 
               b Technologies used: 
@@ -74,22 +74,23 @@ html(lang="en")
               
     .services
       .container
-        h2 I can help you with..
-        ul.services-list
-          ul.services-right
-            li.service Creating landing pages and multi-page websites
-            li.service Converting your design into reality
-            li.service Optimize website for faster reload times
-          ul.services-left
-            li.service User interface design tips
-            li.service Making responsive websites
-        p.services-footer 
-          strong My services are always tailored to client needs.
-          br
-          a(href="#") Send me a message
-          | , and let’s discuss how I can help you.
+        .services-wrapper.fade-up
+          h2 I can help you with..
+          ul.services-list
+            ul.services-right
+              li.service Creating landing pages and multi-page websites
+              li.service Converting your design into reality
+              li.service Optimize website for faster reload times
+            ul.services-left
+              li.service User interface design tips
+              li.service Making responsive websites
+          p.services-footer 
+            strong My services are always tailored to client needs.
+            br
+            a(href="#") Send me a message
+            | , and let’s discuss how I can help you.
 
-    .contact-cta
+    .contact-cta.fade-up
       .container
         h3 I'm currently available for new projects
         p Send me a message and let’s discuss how I can help you.
