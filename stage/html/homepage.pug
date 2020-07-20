@@ -7,17 +7,7 @@ html(lang="en")
     title #{pageTitle}
     include pug/layout/styles
   body
-    nav
-      .nav-wrapper.fade-down
-        .logo
-          a(href="homepage.html") Mario Yonan
-        ul.nav-list
-          li
-            a.active(href="#") work
-          li 
-            a(href="#") about
-          li 
-            a(href="#") contact
+    include pug/components/navbar
 
     //- intro
     .hero
@@ -96,22 +86,5 @@ html(lang="en")
         p Send me a message and let’s discuss how I can help you.
         a(href="#") Send me a message
 
-    footer
-      .container.footer-wrapper
-        .cp
-          p &copy; 2020 Mario Yonan
-        .social
-          a(href="mailto:mario.yonan.work@gmail.com")
-            i.fas.fa-envelope.fa-lg
-          a(href="https://github.com/mario130")
-            i.fab.fa-github.fa-lg
-
-
-
-
-
-
-
-
-
+    include pug/components/footer
     include pug/layout/scripts

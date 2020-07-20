@@ -1,0 +1,30 @@
+- var pageTitle = "About"
+<!DOCTYPE html>
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    title #{pageTitle}
+    include pug/layout/styles
+  body
+    include pug/components/navbar
+
+    //- img & info
+    main
+      .container
+
+        .about-me.fade-up-now-abt
+          .image-box
+            img(src="images/me.jpg", alt="")
+          .info
+            h2 About me
+            p.lead Hello! I’m Mario Yonan, a Frontend Web Developer / Designer currently starting work as a freelancer. I like collaborating with passionate people and companies to create products and services that have exceptional user experience.
+            p.follow-me You can follow me on 
+              a(href="https://www.linkedin.com/in/mario11s/") LinkedIn
+              |, 
+              a(href="https://github.com/mario130") Github
+              |, or reach out via email - 
+              a(href="mailto:mario.yonan.work@gmail.com") mario.yonan.work@gmail.com
+
+    include pug/components/footer
+    include pug/layout/scripts

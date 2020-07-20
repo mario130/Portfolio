@@ -1,0 +1,67 @@
+// fade animations
+.fade-from-left,
+.fade-from-right {
+  transition: 0.5s all ease-in-out;
+  opacity: 0;
+}
+
+.fade-from-left {
+  transform: translateX(-100px);
+}
+.fade-start-left {
+  transform: translateX(0px);
+}
+.fade-from-right {
+  transform: translateX(100px);
+}
+.fade-start-right {
+  transform: translateX(0);
+}
+.fade-start-left,
+.fade-start-right {
+  opacity: 1;
+}
+
+.fade-up {
+  transition: 0.5s all ease-in-out;
+  opacity: 0;
+  transform: translateY(100px);
+}
+.fade-up-start {
+  opacity: 1;
+  transform: translateY(0);
+}
+.fade-up-now,
+.fade-up-now-abt {
+  transition: 0.5s all ease-in-out;
+  opacity: 0;
+  transform: translateY(100px);
+}
+.fade-up-now-start {
+  opacity: 1;
+  transform: translateY(0);
+}
+.fade-down {
+  transition: 0.5s all ease-in-out;
+  opacity: 0;
+  transform: translateY(-100px);
+}
+.fade-down-start {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.fade-in {
+  transition: 0.8s all ease-in-out;
+  opacity: 0;
+}
+.fade-in-start {
+  opacity: 1;
+}
+.fade-in-later {
+  transition: 0.8s all ease-in-out;
+  opacity: 0;
+}
+.fade-in-later-start {
+  opacity: 1;
+}

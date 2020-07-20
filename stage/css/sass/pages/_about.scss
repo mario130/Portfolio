@@ -1,0 +1,46 @@
+main {
+  margin-top: 80px;
+  .container {
+    max-width: 700px;
+  }
+}
+.about-me {
+  margin-bottom: 60px;
+}
+.image-box {
+  margin-bottom: 50px;
+
+  img {
+    width: 100%;
+  }
+}
+.info {
+  h2 {
+    font-weight: 500;
+    font-family: "Noto Sans JP", sans-serif;
+    margin-bottom: 20px;
+  }
+  p {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    color: #222;
+  }
+  .lead {
+    font-size: 1.15rem;
+  }
+  p.follow-me {
+    font-size: 1rem;
+
+    a {
+      text-decoration: underline;
+      color: #2f89fc;
+      &:hover {
+        color: #205faf;
+      }
+    }
+  }
+  @media screen and (max-width: 600px) {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+}

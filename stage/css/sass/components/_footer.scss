@@ -1,0 +1,36 @@
+footer {
+  background-color: #14213d;
+  color: #999;
+  padding: 30px;
+  p {
+    margin: 0;
+  }
+  @media screen and(max-width: 600px) {
+    padding: 15px 0;
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+}
+.footer-wrapper {
+  display: flex;
+  justify-content: space-between;
+
+  .social {
+    a {
+      text-decoration: none;
+      color: #999;
+      margin-left: 20px;
+      transition: all .3s ease-in-out;
+      &:nth-of-type(1){
+        &:hover{
+          color: #bd2c00;
+        }
+      }
+      &:nth-of-type(2){
+        &:hover{
+          color: #4078c0;
+        }
+      }
+    }
+  }
+}
