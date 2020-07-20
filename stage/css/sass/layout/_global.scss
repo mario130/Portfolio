@@ -10,7 +10,7 @@
     padding: 0;
   }
 }
-body{
+body {
   overflow-x: hidden;
 }
 nav {
@@ -120,13 +120,13 @@ nav {
 .work-name {
   width: 30%;
   h2 {
-    font-family: "Montserrat", sans-serif;
-    // margin-bottom: 20px;
+    font-family: "Poppins", sans-serif;
   }
   @media screen and(max-width: 600px) {
     width: 100%;
     h2 {
-      // margin-bottom: 20px;
+      font-size: 1.7rem;
+      font-weight: 600;
     }
   }
 }
@@ -193,7 +193,7 @@ nav {
   .services-left {
     list-style: circle inside;
     flex: 1;
-    
+
     li {
       margin-bottom: 1rem;
       font-weight: 400;
@@ -314,45 +314,45 @@ footer {
   opacity: 1;
 }
 
-.fade-up{
+.fade-up {
   transition: 0.5s all ease-in-out;
   opacity: 0;
   transform: translateY(100px);
 }
-.fade-up-start{
+.fade-up-start {
   opacity: 1;
   transform: translateY(0);
 }
-.fade-up-now{
+.fade-up-now {
   transition: 0.5s all ease-in-out;
   opacity: 0;
   transform: translateY(100px);
 }
-.fade-up-now-start{
+.fade-up-now-start {
   opacity: 1;
   transform: translateY(0);
 }
-.fade-down{
+.fade-down {
   transition: 0.5s all ease-in-out;
   opacity: 0;
   transform: translateY(-100px);
 }
-.fade-down-start{
+.fade-down-start {
   opacity: 1;
   transform: translateY(0);
 }
 
-.fade-in{
+.fade-in {
   transition: 0.5s all ease-in-out;
   opacity: 0;
 }
-.fade-in-start{
+.fade-in-start {
   opacity: 1;
 }
-.fade-in-later{
+.fade-in-later {
   transition: 0.5s all ease-in-out;
   opacity: 0;
 }
-.fade-in-later-start{
+.fade-in-later-start {
   opacity: 1;
 }
