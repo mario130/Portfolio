@@ -1,0 +1,115 @@
+- var pageTitle = "Home"
+<!DOCTYPE html>
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
+    title #{pageTitle}
+    include pug/layout/styles
+  body
+    nav
+      .nav-wrapper
+        .logo
+          a(href="homepage.html") Mario Yonan
+        ul.nav-list
+          li
+            a.active(href="#") work
+          li 
+            a(href="#") about
+          li 
+            a(href="#") contact
+
+    //- intro
+    .hero
+      .hero-wrapper.container
+        h2 Hello! I'm Mario Yonan – a Frontend Web Developer from Asyut, Egypt.
+
+    //- word
+    .works.container
+
+      .awork-parent
+        img(src="images/website-1.png", alt="")
+
+        .awork
+          .work-name
+            h2 Tween 11
+          .work-desc
+            p.desc Tween 11 is my latest website built without using CSS libraries like Bootstrap, only Media Query from scratch. It was much easier to get the specific design I wanted althought it took longer time.
+            p 
+              b Technologies used: 
+              | Pug(HTML) - Sass(CSS) - Javascript(jQuery)
+            .links
+              a.project-link(href="https://github.com/mario130/practice-a") Repo ›
+              a.project-link(href="https://mario130.github.io/practice-a/dist/homepage.html") Live version ›
+              
+      .awork-parent
+        img(src="images/website-2.png", alt="")
+
+        .awork
+          .work-name
+            h2 Design 23
+          .work-desc
+            p.desc One of the websites which I created once I finished a lot of technologies but I focused the most on using Javascript on this one, also without using Bootstrap.
+            p 
+              b Technologies used: 
+              | Pug(HTML) - Sass(CSS) - Javascript
+            .links
+              a.project-link(href="https://github.com/mario130/30-6temp") Repo ›
+              a.project-link(href="https://mario130.github.io/30-6temp/dist/homepage.html") Live version ›
+              
+      .awork-parent
+        img(src="images/website-3.png", alt="")
+
+        .awork
+          .work-name
+            h2 newzy.
+          .work-desc
+            p.desc A news website template I created when I was still a beginner in Media Query, But since then I've came a long way.
+            p 
+              b Technologies used: 
+              | HTML - CSS - Javascript
+            .links
+              a.project-link(href="https://github.com/mario130/Project-5-NewsWebsite") Repo ›
+              a.project-link(href="https://mario130.github.io/Project-5-NewsWebsite/") Live version ›
+              
+    .services
+      .container
+        h2 I can help you with..
+        ul.services-list
+          ul.services-right
+            li.service Creating landing pages and multi-page websites
+            li.service Converting your design into reality
+            li.service Optimize website for faster reload times
+          ul.services-left
+            li.service User interface design tips
+            li.service Making responsive websites
+        p.services-footer 
+          strong My services are always tailored to client needs.
+          br
+          a(href="#") Send me a message
+          | , and let’s discuss how I can help you.
+
+    .contact-cta
+      h3 I'm currently available for new projects
+      p Send me a message and let’s discuss how I can help you.
+      a(href="#") Send me a message
+
+    footer
+      .container.footer-wrapper
+        .cp
+          p &copy; 2020 Mario Yonan
+        .social
+          a(href="mailto:mario.yonan.work@gmail.com")
+            i.fas.fa-envelope.fa-lg
+          a(href="https://github.com/mario130")
+            i.fab.fa-github.fa-lg
+
+
+
+
+
+
+
+
+
+    include pug/layout/scripts
