@@ -46,6 +46,25 @@ function fadeUp() {
 
 window.addEventListener("scroll", fadeUp);
 
+
+
+
+function fadeUpNow() {
+  let headings = document.querySelectorAll(".fade-in-later");
+  headings.forEach((headling) => {
+    let headingsPos = headling.getBoundingClientRect().top;
+    let screenPos = window.innerHeight / 1.1;
+
+    if (headingsPos < screenPos) {
+      headling.classList.add("fade-in-later-start");
+    } else {
+      headling.classList.remove("fade-in-later-start");
+    }
+  });
+}
+
+window.addEventListener("scroll", fadeUpNow);
+
 // function fadeDown() {
 //   let headings = document.querySelectorAll(".fade-down");
 //   headings.forEach((headling) => {

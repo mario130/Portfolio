@@ -193,7 +193,7 @@ nav {
   .services-left {
     list-style: circle inside;
     flex: 1;
-
+    
     li {
       margin-bottom: 1rem;
       font-weight: 400;
@@ -347,5 +347,12 @@ footer {
   opacity: 0;
 }
 .fade-in-start{
+  opacity: 1;
+}
+.fade-in-later{
+  transition: 0.5s all ease-in-out;
+  opacity: 0;
+}
+.fade-in-later-start{
   opacity: 1;
 }
