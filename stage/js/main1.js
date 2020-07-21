@@ -11,10 +11,11 @@ function fadeFromLeft() {
     let headingsPos = headling.getBoundingClientRect().top;
     let screenPos = window.innerHeight / 1.1;
 
+    // for performance
+    if (headling.classList.contains("fade-start-left")) return
+    
     if (headingsPos < screenPos) {
       headling.classList.add("fade-start-left");
-    } else {
-      headling.classList.remove("fade-start-left");
     }
   });
 }
@@ -26,10 +27,9 @@ function fadeFromRight() {
     let headingsPos = headling.getBoundingClientRect().top;
     let screenPos = window.innerHeight / 1.1;
     
+    if (headling.classList.contains("fade-start-right")) return;
     if (headingsPos < screenPos) {
       headling.classList.add("fade-start-right");
-    } else {
-      headling.classList.remove("fade-start-right");
     }
   });
 }
@@ -41,10 +41,9 @@ function fadeUp() {
     let headingsPos = headling.getBoundingClientRect().top;
     let screenPos = window.innerHeight / 1.1;
     
+    if (headling.classList.contains("fade-up-start")) return;
     if (headingsPos < screenPos) {
       headling.classList.add("fade-up-start");
-    } else {
-      headling.classList.remove("fade-up-start");
     }
   });
 }
@@ -59,10 +58,9 @@ function fadeUpNow() {
     let headingsPos = headling.getBoundingClientRect().top;
     let screenPos = window.innerHeight / 1.1;
     
+    if (headling.classList.contains("fade-in-later-start")) return;
     if (headingsPos < screenPos) {
       headling.classList.add("fade-in-later-start");
-    } else {
-      headling.classList.remove("fade-in-later-start");
     }
   });
 }
