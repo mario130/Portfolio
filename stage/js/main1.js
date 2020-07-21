@@ -1,3 +1,10 @@
+window.addEventListener('load', function () {
+  setTimeout(function () {
+    $('.load-wrapper').fadeOut();
+    document.body.style.overflow = 'auto'
+    
+  }, 0)
+})
 function fadeFromLeft() {
   let headings = document.querySelectorAll(".fade-from-left");
   headings.forEach((headling) => {
