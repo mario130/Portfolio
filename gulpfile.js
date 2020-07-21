@@ -1,11 +1,12 @@
 const { series, src, dest, parallel, watch } = require("gulp");
 var gulp = require("gulp"),
-	concat = require("gulp-concat"),
-	sass = require("gulp-sass"),
-	autoprefixer = require("gulp-autoprefixer"),
-	pug = require("gulp-pug"),
-	sourcemaps = require("gulp-sourcemaps"),
-	minify = require("gulp-minify");
+  concat = require("gulp-concat"),
+  sass = require("gulp-sass"),
+  autoprefixer = require("gulp-autoprefixer"),
+  pug = require("gulp-pug"),
+  sourcemaps = require("gulp-sourcemaps"),
+  minify = require("gulp-minify"),
+  cleanCSS = require("gulp-clean-css");
 
 // pug-html task
 gulp.task("html", function () {
@@ -24,9 +25,10 @@ gulp.task("css", function () {
 	return gulp
 		.src(["stage/css/**/*.css", "stage/css/**/*.scss"])
 		.pipe(sourcemaps.init())
-		.pipe(sass().on("error", sass.logError))
+		.pipe(sass({ outputStyle: "compressed" }).on("error", sass.logError))
 		.pipe(autoprefixer())
-		.pipe(concat("main.css"))
+    .pipe(concat("main.css"))
+    .pipe(cleanCSS())
 		.pipe(sourcemaps.write("."))
 		.pipe(gulp.dest("dist/css"));
 });
