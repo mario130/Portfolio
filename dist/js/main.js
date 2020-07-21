@@ -71,10 +71,9 @@ headings.forEach((headling) => {
   let screenPos = window.innerHeight / 1.1;
 
   window.onload = function () {
-    if(document.title === 'Home'){
+    if (document.title === "Mario Yonan - Works") {
       document.querySelector(".fade-in").classList.add("fade-in-start");
       document.querySelector(".fade-up-now").classList.add("fade-up-now-start");
-      
     }
     headling.classList.add("fade-down-start");
   };
@@ -87,7 +86,6 @@ navLinks.forEach(link => {
     link.classList.add('active')
   }
 })
-if (document.title === 'About') {
-  
+if (document.title === "Mario Yonan - About") {
   document.querySelector(".fade-up-now-abt").classList.add("fade-up-now-start");
 }
