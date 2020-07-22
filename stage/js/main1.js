@@ -91,12 +91,16 @@ let navLinks = document.querySelectorAll(".nav-list li a");
 // }
 
 // navLinks[0].classList.add('active')
-document.title === "Mario Yonan - About"
-  ? navLinks[1].classList.add("active")
-  : navLinks[0].classList.add("active");
+document.title === "Mario Yonan - Works"
+  ? navLinks[0].classList.add("active")
+  : navLinks[1].classList.add("active");
 navLinks.forEach((link) => {
   link.addEventListener("click", function () {
     $(link).addClass('active').parent().siblings().children('a').removeClass('active')
   });
 });
 
+$('.logo a').on('click', function () {
+  navLinks[1].classList.remove('active');
+  navLinks[0].classList.add('active');
+})
