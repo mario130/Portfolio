@@ -17,7 +17,7 @@ html(lang="en")
 
           .about-me
             .image-box
-              img(src="images/me.webp", alt="")
+              img(src="dist/images/me.webp", alt="")
             .info
               h2 About me
               p.lead Hello! I’m Mario Yonan, a Frontend Web Developer / Designer currently starting work as a freelancer. I like collaborating with passionate people and companies to create products and services that have exceptional user experience.
@@ -30,9 +30,9 @@ html(lang="en")
 
     include pug/components/footer
 
-    script(defer src="js/jquery-3.5.1.min.js")
-    script(src="js/swup.min.js")
+    script(src="dist/js/jquery-3.5.1.min.js")
     //- script(src="/node_modules/swup/dist/swup.min.js")
-    script(defer src="js/main-min.js")
+    script(src="dist/js/swup.min.js")
+    script(src="dist/js/main-min.js")
     
     //- include pug/layout/scripts

@@ -17,7 +17,7 @@ gulp.task("html", function () {
 				pretty: true,
 			})
 		)
-		.pipe(gulp.dest("dist"));
+		.pipe(gulp.dest("./"));
 });
 
 //css task
