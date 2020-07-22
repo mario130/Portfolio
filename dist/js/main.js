@@ -1,4 +1,6 @@
-const swup = new Swup();
+const swup = new Swup({
+  plugins: [new SwupScrollPlugin()],
+});
 
 window.addEventListener("load", function () {
   $(".load-wrapper").fadeOut();
@@ -98,4 +100,3 @@ navLinks.forEach((link) => {
     // link.classList.add("active");
   });
 });
-
