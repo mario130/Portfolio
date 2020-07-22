@@ -1,10 +1,7 @@
-window.addEventListener('load', function () {
-  setTimeout(function () {
-    $('.load-wrapper').fadeOut();
-    document.body.style.overflow = 'auto'
-    
-  }, 0)
-})
+window.addEventListener("load", function () {
+  $(".load-wrapper").fadeOut();
+  document.body.style.overflow = "auto";
+});
 function fadeFromLeft() {
   let headings = document.querySelectorAll(".fade-from-left");
   headings.forEach((headling) => {
@@ -12,21 +9,20 @@ function fadeFromLeft() {
     let screenPos = window.innerHeight / 1.1;
 
     // for performance
-    if (headling.classList.contains("fade-start-left")) return
-    
+    if (headling.classList.contains("fade-start-left")) return;
+
     if (headingsPos < screenPos) {
       headling.classList.add("fade-start-left");
     }
   });
 }
 
-
 function fadeFromRight() {
   let headings = document.querySelectorAll(".fade-from-right");
   headings.forEach((headling) => {
     let headingsPos = headling.getBoundingClientRect().top;
     let screenPos = window.innerHeight / 1.1;
-    
+
     if (headling.classList.contains("fade-start-right")) return;
     if (headingsPos < screenPos) {
       headling.classList.add("fade-start-right");
@@ -34,13 +30,12 @@ function fadeFromRight() {
   });
 }
 
-
 function fadeUp() {
   let headings = document.querySelectorAll(".fade-up");
   headings.forEach((headling) => {
     let headingsPos = headling.getBoundingClientRect().top;
     let screenPos = window.innerHeight / 1.1;
-    
+
     if (headling.classList.contains("fade-up-start")) return;
     if (headingsPos < screenPos) {
       headling.classList.add("fade-up-start");
@@ -48,16 +43,12 @@ function fadeUp() {
   });
 }
 
-
-
-
-
 function fadeUpNow() {
   let headings = document.querySelectorAll(".fade-in-later");
   headings.forEach((headling) => {
     let headingsPos = headling.getBoundingClientRect().top;
     let screenPos = window.innerHeight / 1.1;
-    
+
     if (headling.classList.contains("fade-in-later-start")) return;
     if (headingsPos < screenPos) {
       headling.classList.add("fade-in-later-start");
@@ -85,12 +76,12 @@ headings.forEach((headling) => {
 });
 
 // nav indicator
-let navLinks = document.querySelectorAll('.nav-list li a');
-navLinks.forEach(link => {
+let navLinks = document.querySelectorAll(".nav-list li a");
+navLinks.forEach((link) => {
   if (link.dataset.indicator === document.title) {
-    link.classList.add('active')
+    link.classList.add("active");
   }
-})
+});
 if (document.title === "Mario Yonan - About") {
   document.querySelector(".fade-up-now-abt").classList.add("fade-up-now-start");
 }
