@@ -74,3 +74,21 @@ body{overflow: hidden;}
     -webkit-transform: scale(1);
   }
 }
+
+.transition-fade {
+  transition: 0.4s;
+  opacity: 1;
+  transform: translateX(0);
+  transform-origin: left;
+}
+
+html.is-animating .transition-fade {
+  opacity: 0;
+  // transform: translateY(100px);
+  transform: translateX(100%);
+}
+
+html.is-leaving .transition-fade{
+  opacity: 0;
+  transform: translateX(0);
+}

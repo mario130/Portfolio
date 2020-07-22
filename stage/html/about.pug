@@ -2,13 +2,6 @@
 <!DOCTYPE html>
 html(lang="en")
   head
-    //- Global site tag (gtag.js) - Google Analytics
-    script(async='', src='https://www.googletagmanager.com/gtag/js?id=UA-173230847-1')
-    script.
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'UA-173230847-1');
     meta(charset="UTF-8")
     meta(name="viewport", content="width=device-width, initial-scale=1.0")
     title Mario Yonan - #{pageTitle}
@@ -17,23 +10,28 @@ html(lang="en")
     include pug/components/loading
     include pug/components/navbar
 
-    //- img & info
-    main
-      .container
+    #swup.transition-fade
+      //- img & info
+      main
+        .container
 
-        .about-me.fade-up-now-abt
-          .image-box
-            img(src="images/me.webp", alt="")
-          .info
-            h2 About me
-            p.lead Hello! I’m Mario Yonan, a Frontend Web Developer / Designer currently starting work as a freelancer. I like collaborating with passionate people and companies to create products and services that have exceptional user experience.
-            p.follow-me You can follow me on 
-              a(href="https://www.linkedin.com/in/mario11s/") LinkedIn
-              |, 
-              a(href="https://github.com/mario130") Github
-              |, or reach out via email - 
-              a(href="mailto:mario.yonan.work@gmail.com") mario.yonan.work@gmail.com
+          .about-me
+            .image-box
+              img(src="images/me.webp", alt="")
+            .info
+              h2 About me
+              p.lead Hello! I’m Mario Yonan, a Frontend Web Developer / Designer currently starting work as a freelancer. I like collaborating with passionate people and companies to create products and services that have exceptional user experience.
+              p.follow-me You can follow me on 
+                a(href="https://www.linkedin.com/in/mario11s/") LinkedIn
+                |, 
+                a(href="https://github.com/mario130") Github
+                |, or reach out via email - 
+                a(href="mailto:mario.yonan.work@gmail.com") mario.yonan.work@gmail.com
 
     include pug/components/footer
+
+    script(defer src="js/jquery-3.5.1.min.js")
+    script(src="/node_modules/swup/dist/swup.min.js")
+    script(defer src="js/main-min.js")
     
     //- include pug/layout/scripts

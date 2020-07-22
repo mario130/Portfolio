@@ -1,3 +1,5 @@
+const swup = new Swup();
+
 window.addEventListener("load", function () {
   $(".load-wrapper").fadeOut();
   document.body.style.overflow = "auto";
@@ -77,11 +79,22 @@ headings.forEach((headling) => {
 
 // nav indicator
 let navLinks = document.querySelectorAll(".nav-list li a");
+// navLinks.forEach((link) => {
+//   if (link.dataset.indicator === document.title) {
+//     link.classList.add("active");
+//   }
+// });
+// if (document.title === "Mario Yonan - About") {
+//   document.querySelector(".fade-up-now-abt").classList.add("fade-up-now-start");
+// }
+
+// navLinks[0].classList.add('active')
+document.title === "Mario Yonan - About"
+  ? navLinks[1].classList.add("active")
+  : navLinks[0].classList.add("active");
 navLinks.forEach((link) => {
-  if (link.dataset.indicator === document.title) {
-    link.classList.add("active");
-  }
+  link.addEventListener("click", function () {
+    $(link).addClass('active').parent().siblings().children('a').removeClass('active')
+    // link.classList.add("active");
+  });
 });
-if (document.title === "Mario Yonan - About") {
-  document.querySelector(".fade-up-now-abt").classList.add("fade-up-now-start");
-}

@@ -1,21 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-173230847-1"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'UA-173230847-1');
-    </script>
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Mario Yonan - Works</title>
     <meta name="description" content="Mario Yonan - A frontend developer / designer with passion to create exceptional websites using modern technologies and out of the box ideas."/>
     <link rel="stylesheet" href="css/main.css"/>
     <link defer="defer" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;900&amp;family=Open+Sans:wght@300;400&amp;family=Poppins:wght@300;400;700;900&amp;display=swap" rel="stylesheet"/>
-    <script defer="defer" src="js/jquery-3.5.1.min.js"></script>
-    <script defer="defer" src="js/main-min.js"></script>
     <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png"/>
     <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png"/>
     <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png"/>
@@ -29,83 +20,85 @@
       </div>
     </div>
     <nav>
-      <div class="nav-wrapper fade-down">
-        <div class="logo"><a href="homepage.html">Mario Yonan</a></div>
+      <div class="nav-wrapper">
+        <div class="logo"><a href="/dist/homepage.html">Mario Yonan</a></div>
         <ul class="nav-list">
-          <li><a href="homepage.html" data-indicator="Mario Yonan - Works">works</a></li>
-          <li> <a href="about.html" data-indicator="Mario Yonan - About">about</a></li>
+          <li><a href="/dist/homepage.html" data-indicator="Mario Yonan - Works">works</a></li>
+          <li> <a href="/dist/about.html" data-indicator="Mario Yonan - About">about</a></li>
         </ul>
       </div>
     </nav>
-    <div class="hero">
-      <div class="hero-wrapper container fade-in">
-        <h2>Hello! I'm Mario Yonan – a Frontend Web Developer from Asyut, Egypt.</h2>
+    <div class="transition-fade" id="swup">
+      <div class="hero">
+        <div class="hero-wrapper container">
+          <h2>Hello! I'm Mario Yonan – a Frontend Web Developer from Asyut, Egypt.</h2>
+        </div>
       </div>
-    </div>
-    <div class="works container">
-      <div class="awork-parent fade-up-now"><img src="images/website-1.webp" alt=""/>
-        <div class="awork">
-          <div class="work-name fade-from-left">
-            <h2>Tween 11</h2>
+      <div class="works container">
+        <div class="awork-parent"><img src="images/website-1.webp" alt=""/>
+          <div class="awork">
+            <div class="work-name fade-from-left">
+              <h2>Tween 11</h2>
+            </div>
+            <div class="work-desc fade-in-later">
+              <p class="desc">Tween 11 is my latest website built without using CSS libraries like Bootstrap, only Media Query from scratch. It was much easier to get the specific design I wanted althought it took longer time.</p>
+              <p> <b>Technologies used: </b>Pug(HTML) - Sass(CSS) - Javascript(jQuery)</p>
+              <div class="links"><a class="project-link" href="https://github.com/mario130/practice-a">Repo ›</a><a class="project-link" href="https://mario130.github.io/practice-a/dist/homepage.html">Live version ›</a></div>
+            </div>
           </div>
-          <div class="work-desc fade-in-later">
-            <p class="desc">Tween 11 is my latest website built without using CSS libraries like Bootstrap, only Media Query from scratch. It was much easier to get the specific design I wanted althought it took longer time.</p>
-            <p> <b>Technologies used: </b>Pug(HTML) - Sass(CSS) - Javascript(jQuery)</p>
-            <div class="links"><a class="project-link" href="https://github.com/mario130/practice-a">Repo ›</a><a class="project-link" href="https://mario130.github.io/practice-a/dist/homepage.html">Live version ›</a></div>
+        </div>
+        <div class="awork-parent fade-up"><img src="images/website-2.webp" alt=""/>
+          <div class="awork">
+            <div class="work-name fade-from-left">
+              <h2>Design 23</h2>
+            </div>
+            <div class="work-desc fade-in-later">
+              <p class="desc">One of the websites which I created once I finished learning a lot of technologies but I focused the most on using vanilla Javascript on this one, also without using Bootstrap.</p>
+              <p> <b>Technologies used: </b>Pug(HTML) - Sass(CSS) - Javascript</p>
+              <div class="links"><a class="project-link" href="https://github.com/mario130/30-6temp">Repo ›</a><a class="project-link" href="https://mario130.github.io/30-6temp/dist/homepage.html">Live version ›</a></div>
+            </div>
+          </div>
+        </div>
+        <div class="awork-parent fade-up"><img src="images/website-3.webp" alt=""/>
+          <div class="awork">
+            <div class="work-name fade-from-left">
+              <h2>newzy.</h2>
+            </div>
+            <div class="work-desc fade-in-later">
+              <p class="desc">A news website template I created when I was still a beginner in Media Query, But since then I've came a long way.</p>
+              <p> <b>Technologies used: </b>HTML - CSS - Javascript</p>
+              <div class="links"><a class="project-link" href="https://github.com/mario130/Project-5-NewsWebsite">Repo ›</a><a class="project-link" href="https://mario130.github.io/Project-5-NewsWebsite/">Live version ›</a></div>
+            </div>
           </div>
         </div>
       </div>
-      <div class="awork-parent fade-up"><img src="images/website-2.webp" alt=""/>
-        <div class="awork">
-          <div class="work-name fade-from-left">
-            <h2>Design 23</h2>
-          </div>
-          <div class="work-desc fade-in-later">
-            <p class="desc">One of the websites which I created once I finished learning a lot of technologies but I focused the most on using vanilla Javascript on this one, also without using Bootstrap.</p>
-            <p> <b>Technologies used: </b>Pug(HTML) - Sass(CSS) - Javascript</p>
-            <div class="links"><a class="project-link" href="https://github.com/mario130/30-6temp">Repo ›</a><a class="project-link" href="https://mario130.github.io/30-6temp/dist/homepage.html">Live version ›</a></div>
-          </div>
-        </div>
-      </div>
-      <div class="awork-parent fade-up"><img src="images/website-3.webp" alt=""/>
-        <div class="awork">
-          <div class="work-name fade-from-left">
-            <h2>newzy.</h2>
-          </div>
-          <div class="work-desc fade-in-later">
-            <p class="desc">A news website template I created when I was still a beginner in Media Query, But since then I've came a long way.</p>
-            <p> <b>Technologies used: </b>HTML - CSS - Javascript</p>
-            <div class="links"><a class="project-link" href="https://github.com/mario130/Project-5-NewsWebsite">Repo ›</a><a class="project-link" href="https://mario130.github.io/Project-5-NewsWebsite/">Live version ›</a></div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="services">
-      <div class="container">
-        <div class="services-wrapper fade-up">
-          <h2>I can help you with..</h2>
-          <ul class="services-list">
-            <ul class="services-right">
-              <li class="service">Converting your design into reality</li>
-              <li class="service">Creating landing & multi-page websites</li>
-              <li class="service">Making responsive websites</li>
-              <li class="service">Improving website performance</li>
+      <div class="services">
+        <div class="container">
+          <div class="services-wrapper fade-up">
+            <h2>I can help you with..</h2>
+            <ul class="services-list">
+              <ul class="services-right">
+                <li class="service">Converting your design into reality</li>
+                <li class="service">Creating landing & multi-page websites</li>
+                <li class="service">Making responsive websites</li>
+                <li class="service">Improving website performance</li>
+              </ul>
+              <ul class="services-left">
+                <li class="service">Providing clean code using best practices</li>
+                <li class="service">Optimize website for faster reload times</li>
+                <li class="service">User interface design tips</li>
+                <li class="service">Website SEO optimization</li>
+              </ul>
             </ul>
-            <ul class="services-left">
-              <li class="service">Providing clean code using best practices</li>
-              <li class="service">Optimize website for faster reload times</li>
-              <li class="service">User interface design tips</li>
-              <li class="service">Website SEO optimization</li>
-            </ul>
-          </ul>
-          <p class="services-footer"> <strong>My services are always tailored to client needs.</strong><br/><a href="mailto:mario.yonan.work@gmail.com">Send me a message</a>, and let’s discuss how I can help you.</p>
+            <p class="services-footer"> <strong>My services are always tailored to client needs.</strong><br/><a href="mailto:mario.yonan.work@gmail.com">Send me a message</a>, and let’s discuss how I can help you.</p>
+          </div>
         </div>
       </div>
-    </div>
-    <div class="contact-cta fade-up">
-      <div class="container">
-        <h3>I'm currently available for new projects</h3>
-        <p>Send me a message and let’s discuss how I can help you.</p><a href="mailto:mario.yonan.work@gmail.com">Send me a message</a>
+      <div class="contact-cta fade-up">
+        <div class="container">
+          <h3>I'm currently available for new projects</h3>
+          <p>Send me a message and let’s discuss how I can help you.</p><a href="mailto:mario.yonan.work@gmail.com">Send me a message</a>
+        </div>
       </div>
     </div>
     <footer>
@@ -116,5 +109,8 @@
         <div class="social"><a href="mailto:mario.yonan.work@gmail.com"><i class="fas fa-envelope fa-lg"></i></a><a href="https://github.com/mario130"><i class="fab fa-github fa-lg"></i></a></div>
       </div>
     </footer>
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="/node_modules/swup/dist/swup.min.js"></script>
+    <script src="js/main-min.js"></script>
   </body>
 </html>

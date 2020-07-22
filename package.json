@@ -24,6 +24,7 @@
     "> 2%"
   ],
   "dependencies": {
-    "bootstrap": "^4.5.0"
+    "bootstrap": "^4.5.0",
+    "swup": "^2.0.11"
   }
 }
