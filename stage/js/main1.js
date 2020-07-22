@@ -97,6 +97,6 @@ document.title === "Mario Yonan - About"
 navLinks.forEach((link) => {
   link.addEventListener("click", function () {
     $(link).addClass('active').parent().siblings().children('a').removeClass('active')
-    // link.classList.add("active");
   });
 });
+
