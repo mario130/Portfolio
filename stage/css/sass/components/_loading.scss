@@ -76,16 +76,16 @@ body{overflow: hidden;}
 }
 
 .transition-fade {
-  transition: 0.4s;
+  transition: 0.3s;
   opacity: 1;
   transform: translateX(0);
-  transform-origin: left;
+  transform-origin: right;
 }
 
 html.is-animating .transition-fade {
   opacity: 0;
   // transform: translateY(100px);
-  transform: translateX(100%);
+  transform: translateX(-100%);
 }
 
 html.is-leaving .transition-fade{
