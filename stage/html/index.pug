@@ -10,88 +10,89 @@ html(lang="en")
     include pug/components/loading
     include pug/components/navbar
 
-    #swup.transition-fade
-      //- intro
-      .hero
-        .hero-wrapper.container
-          h2 Hello! I'm Mario Yonan – a Frontend Web Developer from Asyut, Egypt.
+    .body-wrapper
+      #swup.transition-fade
+        //- intro
+        .hero
+          .hero-wrapper.container
+            h2 Hello! I'm Mario Yonan – a Frontend Web Developer from Asyut, Egypt.
 
-      //- word
-      .works.container
+        //- word
+        .works.container
 
-        .awork-parent
-          img(src="dist/images/website-1.webp", alt="")
+          .awork-parent
+            img(src="dist/images/website-1.webp", alt="")
 
-          .awork
-            .work-name.fade-from-left
-              h2 Tween 11
-            .work-desc.fade-in-later
-              p.desc Tween 11 is my latest website built without using CSS libraries like Bootstrap, only Media Query from scratch. It was much easier to get the specific design I wanted althought it took longer time.
-              p 
-                b Technologies used: 
-                | Pug(HTML) - Sass(CSS) - Javascript(jQuery)
-              .links
-                a.project-link(href="https://github.com/mario130/practice-a") Repo ›
-                a.project-link(href="https://mario130.github.io/practice-a/dist/homepage.html") Live version ›
-                
-        .awork-parent.fade-up
-          img(src="dist/images/website-2.webp", alt="")
+            .awork
+              .work-name.fade-from-left
+                h2 Tween 11
+              .work-desc.fade-in-later
+                p.desc Tween 11 is my latest website built without using CSS libraries like Bootstrap, only Media Query from scratch. It was much easier to get the specific design I wanted althought it took longer time.
+                p 
+                  b Technologies used: 
+                  | Pug(HTML) - Sass(CSS) - Javascript(jQuery)
+                .links
+                  a.project-link(href="https://github.com/mario130/practice-a") Repo ›
+                  a.project-link(href="https://mario130.github.io/practice-a/dist/homepage.html") Live version ›
+                  
+          .awork-parent.fade-up
+            img(src="dist/images/website-2.webp", alt="")
 
-          .awork
-            .work-name.fade-from-left
-              h2 Design 23
-            .work-desc.fade-in-later
-              p.desc One of the websites which I created once I finished learning a lot of technologies but I focused the most on using vanilla Javascript on this one, also without using Bootstrap.
-              p 
-                b Technologies used: 
-                | Pug(HTML) - Sass(CSS) - Javascript
-              .links
-                a.project-link(href="https://github.com/mario130/30-6temp") Repo ›
-                a.project-link(href="https://mario130.github.io/30-6temp/dist/homepage.html") Live version ›
-                
-        .awork-parent.fade-up
-          img(src="dist/images/website-3.webp", alt="")
+            .awork
+              .work-name.fade-from-left
+                h2 Design 23
+              .work-desc.fade-in-later
+                p.desc One of the websites which I created once I finished learning a lot of technologies but I focused the most on using vanilla Javascript on this one, also without using Bootstrap.
+                p 
+                  b Technologies used: 
+                  | Pug(HTML) - Sass(CSS) - Javascript
+                .links
+                  a.project-link(href="https://github.com/mario130/30-6temp") Repo ›
+                  a.project-link(href="https://mario130.github.io/30-6temp/dist/homepage.html") Live version ›
+                  
+          .awork-parent.fade-up
+            img(src="dist/images/website-3.webp", alt="")
 
-          .awork
-            .work-name.fade-from-left
-              h2 newzy.
-            .work-desc.fade-in-later
-              p.desc A news website template I created when I was still a beginner in Media Query, But since then I've came a long way.
-              p 
-                b Technologies used: 
-                | HTML - CSS - Javascript
-              .links
-                a.project-link(href="https://github.com/mario130/Project-5-NewsWebsite") Repo ›
-                a.project-link(href="https://mario130.github.io/Project-5-NewsWebsite/") Live version ›
-                
-      .services
-        .container
-          .services-wrapper.fade-up
-            h2 I can help you with..
-            ul.services-list
-              ul.services-right
-                li.service Converting your design into reality
-                li.service Creating landing & multi-page websites
-                li.service Making responsive websites
-                li.service Improving website performance
-              ul.services-left
-                li.service Providing clean code using best practices
-                li.service Optimize website for faster reload times
-                li.service User interface design tips
-                li.service Website SEO optimization
-            p.services-footer 
-              strong My services are always tailored to client needs.
-              br
-              a(href="mailto:mario.yonan.work@gmail.com") Send me a message
-              | , and let’s discuss how I can help you.
+            .awork
+              .work-name.fade-from-left
+                h2 newzy.
+              .work-desc.fade-in-later
+                p.desc A news website template I created when I was still a beginner in Media Query, But since then I've come a long way.
+                p 
+                  b Technologies used: 
+                  | HTML - CSS - Javascript
+                .links
+                  a.project-link(href="https://github.com/mario130/Project-5-NewsWebsite") Repo ›
+                  a.project-link(href="https://mario130.github.io/Project-5-NewsWebsite/") Live version ›
+                  
+        .services
+          .container
+            .services-wrapper.fade-up
+              h2 I can help you with..
+              ul.services-list
+                ul.services-right
+                  li.service Converting your design into reality
+                  li.service Creating landing & multi-page websites
+                  li.service Making responsive websites
+                  li.service Improving website performance
+                ul.services-left
+                  li.service Providing clean code using best practices
+                  li.service Optimize website for faster reload times
+                  li.service User interface design tips
+                  li.service Website SEO optimization
+              p.services-footer 
+                strong My services are always tailored to client needs.
+                br
+                a(href="mailto:mario.yonan.work@gmail.com") Send me a message
+                | , and let’s discuss how I can help you.
 
-      .contact-cta.fade-up
-        .container
-          h3 I'm currently available for new projects
-          p Send me a message and let’s discuss how I can help you.
-          a(href="mailto:mario.yonan.work@gmail.com") Send me a message
+        .contact-cta.fade-up
+          .container
+            h3 I'm currently available for new projects
+            p Send me a message and let’s discuss how I can help you.
+            a(href="mailto:mario.yonan.work@gmail.com") Send me a message
 
-      include pug/components/footer
+    include pug/components/footer
     
     script(src="dist/js/jquery-3.5.1.min.js")
     script(src="dist/js/swup.min.js")
