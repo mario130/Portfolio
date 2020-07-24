@@ -2,6 +2,7 @@ const swup = new Swup({
   plugins: [new SwupScrollPlugin()],
 });
 
+// remove loading screen
 window.addEventListener("load", function () {
   $(".load-wrapper").fadeOut();
   document.body.style.overflow = "auto";
