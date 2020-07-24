@@ -52,6 +52,7 @@ footer {
   position: relative;
   z-index: 0;
   margin-bottom: 84px;
+  background-color: #fff; // IMP
   @media screen and(max-width: 600px) {
     margin-bottom: 83px;
     .cp {
@@ -60,9 +61,6 @@ footer {
   }
 }
 
-.body-wrapper {
-  background-color: #fff; // IMP
-}
 footer {
   position: fixed;
   bottom: 0;
