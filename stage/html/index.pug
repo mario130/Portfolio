@@ -20,7 +20,24 @@ html(lang="en")
         //- word
         .works.container
 
+
           .awork-parent
+            img(src="dist/images/website-4.webp", alt="")
+
+            .awork
+              .work-name.fade-from-left
+                h2 Tick-do
+              .work-desc.fade-in-later
+                p.desc Tick-do is my first complete project built with Vuejs including Vuex and also some other technologies to make it a functional a fast Single Page App which is also a Progressive Web App thanks to Google's Firebase which I used for authentication, creating a database and to make the app fully functional when offline as well. The repo for this project is private of course for security reasons.
+                p 
+                  b Technologies used: 
+                  | Vuejs (Vuex) - Firebase as a backend - Bootstrap (BootstrapVue)
+                .links
+                  a.project-link(target="_blank" href="http://tick-do.web.app/") Live version ›
+                  
+          
+
+          .awork-parent.fade-up
             img(src="dist/images/website-1.webp", alt="")
 
             .awork
@@ -30,10 +47,10 @@ html(lang="en")
                 p.desc Tween 11 is my latest website built without using CSS libraries like Bootstrap, only Media Query from scratch. It was much easier to get the specific design I wanted althought it took longer time.
                 p 
                   b Technologies used: 
-                  | Pug(HTML) - Sass(CSS) - Javascript(jQuery)
+                  | Pug (HTML) - Sass (CSS) - Javascript (jQuery)
                 .links
-                  a.project-link(href="https://github.com/mario130/practice-a") Repo ›
-                  a.project-link(href="https://mario130.github.io/practice-a/dist/homepage.html") Live version ›
+                  a.project-link(target="_blank" href="https://github.com/mario130/practice-a") Repo ›
+                  a.project-link(target="_blank" href="https://mario130.github.io/practice-a/dist/homepage.html") Live version ›
                   
           .awork-parent.fade-up
             img(src="dist/images/website-2.webp", alt="")
@@ -45,10 +62,10 @@ html(lang="en")
                 p.desc One of the websites which I created once I finished learning a lot of technologies but I focused the most on using vanilla Javascript on this one, also without using Bootstrap.
                 p 
                   b Technologies used: 
-                  | Pug(HTML) - Sass(CSS) - Javascript
+                  | Pug (HTML) - Sass (CSS) - Javascript
                 .links
-                  a.project-link(href="https://github.com/mario130/30-6temp") Repo ›
-                  a.project-link(href="https://mario130.github.io/30-6temp/dist/homepage.html") Live version ›
+                  a.project-link(target="_blank" href="https://github.com/mario130/30-6temp") Repo ›
+                  a.project-link(target="_blank" href="https://mario130.github.io/30-6temp/dist/homepage.html") Live version ›
                   
           .awork-parent.fade-up
             img(src="dist/images/website-3.webp", alt="")
@@ -62,8 +79,8 @@ html(lang="en")
                   b Technologies used: 
                   | HTML - CSS - Javascript
                 .links
-                  a.project-link(href="https://github.com/mario130/Project-5-NewsWebsite") Repo ›
-                  a.project-link(href="https://mario130.github.io/Project-5-NewsWebsite/") Live version ›
+                  a.project-link(target="_blank" href="https://github.com/mario130/Project-5-NewsWebsite") Repo ›
+                  a.project-link(target="_blank" href="https://mario130.github.io/Project-5-NewsWebsite/") Live version ›
                   
         .services
           .container
@@ -83,14 +100,14 @@ html(lang="en")
               p.services-footer 
                 strong My services are always tailored to client needs.
                 br
-                a(href="mailto:mario.yonan.work@gmail.com") Send me a message
+                a(target="_blank" href="mailto:mario.yonan.work@gmail.com") Send me a message
                 | , and let’s discuss how I can help you.
 
         .contact-cta
           .container
             h3 I'm currently available for new projects
             p Send me a message and let’s discuss how I can help you.
-            a(href="mailto:mario.yonan.work@gmail.com") Send me a message
+            a(target="_blank" href="mailto:mario.yonan.work@gmail.com") Send me a message
 
     include pug/components/footer
     
