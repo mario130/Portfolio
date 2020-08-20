@@ -127,11 +127,9 @@
     margin: 0;
     line-height: 1.8;
   }
-  @media screen and (max-width: 600px) {
-    b {
-      display: block;
-      margin-bottom: 4px;
-    }
+  b {
+    display: block;
+    margin-bottom: 4px;
   }
 }
 
